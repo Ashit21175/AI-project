@@ -13,20 +13,20 @@ export default function Home() {
           LOOP
         </h1>
 
-      <nav className="space-y-2">
+    <nav className="space-y-2">
 
   <Link
-    href="/"
-    className="block rounded-lg px-4 py-3 hover:bg-gray-100"
+    href="/dashboard"
+    className="block rounded-lg bg-gray-100 px-4 py-3"
   >
     Dashboard
   </Link>
 
   <Link
-    href="/feedback"
+    href="/inbox"
     className="block rounded-lg px-4 py-3 hover:bg-gray-100"
   >
-    Feedback
+    Inbox
   </Link>
 
   <Link
@@ -37,7 +37,14 @@ export default function Home() {
   </Link>
 
   <Link
-    href="/ask-loop"
+    href="/trends"
+    className="block rounded-lg px-4 py-3 hover:bg-gray-100"
+  >
+    Trends
+  </Link>
+
+  <Link
+    href="/ask"
     className="block rounded-lg px-4 py-3 hover:bg-gray-100"
   >
     Ask LOOP
@@ -48,6 +55,26 @@ export default function Home() {
     className="block rounded-lg px-4 py-3 hover:bg-gray-100"
   >
     Reports
+  </Link>
+
+  <div className="my-4 border-t border-gray-200" />
+
+  <p className="px-4 pb-2 text-xs font-semibold uppercase tracking-wide text-gray-400">
+    Settings
+  </p>
+
+  <Link
+    href="/settings/members"
+    className="block rounded-lg px-4 py-3 hover:bg-gray-100"
+  >
+    Members
+  </Link>
+
+  <Link
+    href="/settings/workspace"
+    className="block rounded-lg px-4 py-3 hover:bg-gray-100"
+  >
+    Workspace
   </Link>
 
 </nav>
